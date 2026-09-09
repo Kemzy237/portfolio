@@ -2,15 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kemgang Wilfried · Software Developer</title>
-    <!-- Fonts & Icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kemgang Wilfried · Software Developer & IT Specialist</title>
+    <meta name="description" content="Software development, IT support, and graphic design. Websites, mobile apps, desktop software, installations, troubleshooting & more." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <style>
+        /* ----- global reset & variables (keep existing) ----- */
+        
         * {
             margin: 0;
             padding: 0;
@@ -56,7 +58,7 @@
             margin: 0 auto;
             padding: 0 24px;
         }
-        /* ----- NAVBAR (glass) ----- */
+        /* ----- navbar (glass) keep original style ----- */
         
         .navbar {
             position: fixed;
@@ -151,7 +153,6 @@
         .btn-resume::after {
             display: none !important;
         }
-        /* Hamburger (mobile) */
         
         .hamburger {
             display: none;
@@ -169,7 +170,7 @@
             border-radius: 6px;
             transition: var(--transition);
         }
-        /* ----- HERO ----- */
+        /* ----- hero (updated messaging) ----- */
         
         .hero {
             min-height: 100vh;
@@ -221,7 +222,7 @@
         }
         
         .hero p {
-            max-width: 540px;
+            max-width: 600px;
             font-size: 1.1rem;
             color: #334155;
             margin-bottom: 28px;
@@ -277,7 +278,7 @@
                 transform: translateY(0);
             }
         }
-        /* ----- SECTION HEADER ----- */
+        /* section header */
         
         .section-header {
             text-align: center;
@@ -301,7 +302,85 @@
             border-radius: 4px;
             margin: 12px auto 0;
         }
-        /* ----- PROJECTS ----- */
+        /* ----- SERVICES (new) ----- */
+        
+        .services {
+            padding: 80px 0;
+            background: var(--white);
+        }
+        
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 28px;
+        }
+        
+        .service-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 28px 22px 30px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid rgba(0, 0, 0, 0.02);
+            text-align: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 30px 50px -12px rgba(44, 62, 80, 0.15);
+        }
+        
+        .service-card i {
+            font-size: 2.6rem;
+            color: var(--secondary);
+            margin-bottom: 16px;
+        }
+        
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+        }
+        
+        .service-card p {
+            color: #475569;
+            font-size: 0.9rem;
+            margin-bottom: 16px;
+        }
+        
+        .service-card .btn-service {
+            display: inline-block;
+            background: var(--light);
+            color: var(--primary);
+            padding: 6px 20px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: var(--transition);
+        }
+        
+        .service-card .btn-service:hover {
+            background: var(--secondary);
+            color: white;
+        }
+        
+        .service-card ul {
+            list-style: none;
+            text-align: left;
+            margin: 12px 0 16px;
+            font-size: 0.9rem;
+        }
+        
+        .service-card ul li {
+            padding: 3px 0;
+            color: #334155;
+        }
+        
+        .service-card ul li::before {
+            content: "▹ ";
+            color: var(--secondary);
+            font-weight: 600;
+        }
+        /* ----- projects (keep existing) ----- */
         
         .projects {
             padding: 80px 0;
@@ -365,7 +444,20 @@
             font-weight: 600;
             letter-spacing: 0.3px;
         }
-        /* ----- SKILLS + EDUCATION (separated) ----- */
+        
+        .project-links {
+            margin-top: 14px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        
+        .project-links a {
+            font-size: 0.9rem;
+            color: var(--secondary);
+            font-weight: 500;
+        }
+        /* ----- skills + education (reorganized) ----- */
         
         .skills-section {
             padding: 80px 0;
@@ -378,7 +470,6 @@
             gap: 48px;
             align-items: start;
         }
-        /* skill categories */
         
         .skill-category {
             margin-bottom: 36px;
@@ -422,7 +513,6 @@
             transform: translateY(-3px);
             box-shadow: 0 8px 16px rgba(52, 152, 219, 0.10);
         }
-        /* Education card */
         
         .education-card {
             background: var(--white);
@@ -464,7 +554,7 @@
             background: #e2e8f0;
             margin: 20px 0;
         }
-        /* ----- ABOUT (with contact) ----- */
+        /* ----- about (updated) ----- */
         
         .about-section {
             padding: 80px 0;
@@ -527,7 +617,7 @@
             border-color: var(--secondary);
             box-shadow: 0 10px 20px rgba(52, 152, 219, 0.15);
         }
-        /* ----- FOOTER ----- */
+        /* footer */
         
         footer {
             background: var(--primary);
@@ -540,9 +630,9 @@
             color: white;
             font-weight: 500;
         }
-        /* ----- RESPONSIVE ----- */
+        /* responsive */
         
-        @media (max-width: 992px) {
+        @media (max-width:992px) {
             .skills-education-grid {
                 grid-template-columns: 1fr;
             }
@@ -554,7 +644,7 @@
             }
         }
         
-        @media (max-width: 768px) {
+        @media (max-width:768px) {
             .navbar {
                 padding: 8px 18px;
                 width: 96%;
@@ -587,7 +677,6 @@
                 font-size: 1.3rem;
             }
         }
-        /* small extra animation */
         
         .fade-in {
             opacity: 0;
@@ -605,151 +694,211 @@
         .fade-in-d3 {
             animation-delay: 0.3s;
         }
+        
+        .fade-in-d4 {
+            animation-delay: 0.4s;
+        }
     </style>
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- NAVBAR (updated nav items) -->
     <nav class="navbar" id="navbar">
-        <div class="nav-brand">
-            <i class="fas fa-code"></i> Kemgang
-        </div>
+        <div class="nav-brand"><i class="fas fa-code"></i> Kemgang</div>
         <ul class="nav-links" id="navLinks">
             <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="KEMGANG%20WILFRIED.pdf" download class="btn-resume"><i class="fas fa-download"></i> Resume</a></li>
         </ul>
-        <button class="hamburger" id="hamburger" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
     </nav>
 
-    <!-- HERO -->
+    <!-- HERO (updated positioning & messaging) -->
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
                 <h1>Kemgang <span>Wilfried</span></h1>
-                <h2>Software Developer</h2>
-                <p>I build robust web & mobile applications from the ground up. Clean code, seamless experiences, and real business value.</p>
+                <h2>Software Developer &amp; IT Specialist</h2>
+                <p>I build websites, mobile &amp; desktop applications, provide IT support, software installation, troubleshooting, and professional graphic design. Let's turn your ideas into digital reality.</p>
                 <div class="hero-btns">
-                    <a href="#projects" class="btn-primary">View My Work</a>
-                    <a href="#about" class="btn-outline">Get In Touch</a>
+                    <a href="#services" class="btn-primary">Explore Services</a>
+                    <a href="#contact" class="btn-outline">Let's Talk</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- SERVICES (new section) -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>What I Can Do For You</h2>
+            </div>
+            <div class="service-grid">
+                <!-- 1 Website Development -->
+                <div class="service-card fade-in fade-in-d1">
+                    <i class="fas fa-globe"></i>
+                    <h3>Website Development</h3>
+                    <ul>
+                        <li>Business &amp; portfolio sites</li>
+                        <li>Landing pages &amp; dynamic web apps</li>
+                    </ul>
+                    <a href="#contact" class="btn-service">Get Started</a>
+                </div>
+                <!-- 2 Mobile App -->
+                <div class="service-card fade-in fade-in-d2">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile App Development</h3>
+                    <ul>
+                        <li>Android &amp; cross-platform Flutter</li>
+                        <li>Business &amp; utility applications</li>
+                    </ul>
+                    <a href="#contact" class="btn-service">Get Started</a>
+                </div>
+                <!-- 3 Desktop Apps -->
+                <div class="service-card fade-in fade-in-d3">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Desktop Applications</h3>
+                    <ul>
+                        <li>Custom desktop software</li>
+                        <li>Business management &amp; utilities</li>
+                    </ul>
+                    <a href="#contact" class="btn-service">Get Started</a>
+                </div>
+                <!-- 4 Graphic Design -->
+                <div class="service-card fade-in fade-in-d4">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Graphic Design</h3>
+                    <ul>
+                        <li>Canva designs, flyers, posters</li>
+                        <li>Social media &amp; business graphics</li>
+                    </ul>
+                    <a href="#contact" class="btn-service">Get Started</a>
+                </div>
+                <!-- 5 Software Installation & Config -->
+                <div class="service-card fade-in fade-in-d1">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Software Installation &amp; Config</h3>
+                    <ul>
+                        <li>Software &amp; driver installation</li>
+                        <li>Windows/application setup</li>
+                    </ul>
+                    <a href="#contact" class="btn-service">Request Service</a>
+                </div>
+                <!-- 6 Computer Maintenance & Troubleshooting -->
+                <div class="service-card fade-in fade-in-d2">
+                    <i class="fas fa-tools"></i>
+                    <h3>Maintenance &amp; Troubleshooting</h3>
+                    <ul>
+                        <li>System optimization &amp; performance</li>
+                        <li>General computer software support</li>
+                    </ul>
+                    <a href="#contact" class="btn-service">Request Service</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS (keep 4 projects, enhance CTAs) -->
     <section class="projects" id="projects">
         <div class="container">
             <div class="section-header">
                 <h2>Projects</h2>
             </div>
             <div class="project-grid">
-                <!-- card 1 -->
                 <div class="project-card fade-in fade-in-d1">
-                    <img src="images/task_management.jpg" alt="Task Management" class="project-img">
+                    <img src="images/task_management.jpg" alt="Task Management System" class="project-img">
                     <div class="project-body">
                         <h3>Task Management System</h3>
                         <p>Assign tasks, track progress, submit proof of completion — streamlined for company workflow.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">HTML</span><span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span><span class="tech-tag">PHP</span>
-                            <span class="tech-tag">MySQL</span>
-                        </div>
+                        <div class="tech-stack"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">PHP</span><span class="tech-tag">MySQL</span></div>
+                        <div class="project-links"><a href="https://github.com/Kemzy237/task-management-system" aria-label="View project details">View Details →</a></div>
                     </div>
                 </div>
-                <!-- card 2 -->
                 <div class="project-card fade-in fade-in-d2">
-                    <img src="images/votesecure.jpg" alt="Voting System" class="project-img">
+                    <img src="images/votesecure.jpg" alt="Online Voting System" class="project-img">
                     <div class="project-body">
                         <h3>Online Voting System</h3>
-                        <p>Automated vote collection, counting, and reporting for elections, contests & corporate polls.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">HTML</span><span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span><span class="tech-tag">PHP</span>
-                            <span class="tech-tag">MySQL</span>
-                        </div>
+                        <p>Automated vote collection, counting, and reporting for elections, contests &amp; corporate polls.</p>
+                        <div class="tech-stack"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">PHP</span><span class="tech-tag">MySQL</span></div>
+                        <div class="project-links"><a href="https://github.com/Kemzy237/online-voting-system" aria-label="View project details">View Details →</a></div>
                     </div>
                 </div>
-                <!-- card 3 -->
                 <div class="project-card fade-in fade-in-d3">
-                    <img src="images/whistleguard.jpg" alt="Whistleblowing" class="project-img">
+                    <img src="images/whistleguard.jpg" alt="Anonymous Whistleblowing" class="project-img">
                     <div class="project-body">
                         <h3>Anonymous Whistleblowing</h3>
                         <p>End-to-end encrypted portal for secure, anonymous submission of sensitive disclosures.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">HTML</span><span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span><span class="tech-tag">PHP</span>
-                            <span class="tech-tag">MySQL</span>
-                        </div>
+                        <div class="tech-stack"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">PHP</span><span class="tech-tag">MySQL</span></div>
+                        <div class="project-links"><a href="https://github.com/Kemzy237/whistle-blower" aria-label="View project details">View Details →</a></div>
                     </div>
                 </div>
-                <!-- card 4 -->
-                <div class="project-card fade-in fade-in-d1">
-                    <img src="images/bus_tickets.jpg" alt="Bus Ticket" class="project-img">
+                <div class="project-card fade-in fade-in-d4">
+                    <img src="images/bus_tickets.jpg" alt="Bus Ticket Booking" class="project-img">
                     <div class="project-body">
                         <h3>Bus Ticket Booking</h3>
-                        <p>Mobile-first app for real-time schedule discovery, seat selection & digital ticketing.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Dart</span><span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">PostgreSQL</span><span class="tech-tag">TypeScript</span>
-                        </div>
+                        <p>Mobile-first app for real-time schedule discovery, seat selection &amp; digital ticketing.</p>
+                        <div class="tech-stack"><span class="tech-tag">Dart</span><span class="tech-tag">Flutter</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">TypeScript</span></div>
+                        <div class="project-links"><a href="https://github.com/Kemzy237/bus_ticket_app_website" aria-label="View project details">View Details →</a></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SKILLS + EDUCATION (separated) -->
+    <!-- SKILLS + EDUCATION (reorganized categories) -->
     <section class="skills-section" id="skills">
         <div class="container">
             <div class="section-header">
-                <h2>Skills</h2>
+                <h2>Skills &amp; Expertise</h2>
             </div>
             <div class="skills-education-grid">
-                <!-- left: skills categories -->
                 <div>
-                    <!-- Web -->
                     <div class="skill-category">
-                        <h3><i class="fas fa-globe"></i> Web</h3>
+                        <h3><i class="fas fa-code"></i> Development</h3>
                         <div class="skill-chips">
                             <span class="skill-chip">HTML</span><span class="skill-chip">CSS</span>
-                            <span class="skill-chip">JavaScript</span><span class="skill-chip">Bootstrap</span>
-                            <span class="skill-chip">PHP</span><span class="skill-chip">MySQL</span>
+                            <span class="skill-chip">JavaScript</span><span class="skill-chip">PHP</span>
+                            <span class="skill-chip">Python</span><span class="skill-chip">C</span>
+                            <span class="skill-chip">C++</span><span class="skill-chip">Dart</span>
                         </div>
                     </div>
-                    <!-- Mobile -->
                     <div class="skill-category">
-                        <h3><i class="fas fa-mobile-alt"></i> Mobile</h3>
-                        <div class="skill-chips">
-                            <span class="skill-chip">Flutter</span><span class="skill-chip">Dart</span>
-                            <span class="skill-chip">TypeScript</span>
-                        </div>
-                    </div>
-                    <!-- Desktop -->
-                    <div class="skill-category">
-                        <h3><i class="fas fa-desktop"></i> Desktop</h3>
-                        <div class="skill-chips">
-                            <span class="skill-chip">C</span><span class="skill-chip">C++</span>
-                            <span class="skill-chip">Python</span>
-                        </div>
-                    </div>
-                    <!-- Frameworks & tools -->
-                    <div class="skill-category">
-                        <h3><i class="fas fa-layer-group"></i> Frameworks & Tools</h3>
+                        <h3><i class="fas fa-layer-group"></i> Frameworks &amp; Technologies</h3>
                         <div class="skill-chips">
                             <span class="skill-chip">Bootstrap</span><span class="skill-chip">Flutter</span>
-                            <span class="skill-chip">PostgreSQL</span><span class="skill-chip">MySQL</span>
+                            <span class="skill-chip">Laravel</span><span class="skill-chip">MySQL</span>
+                            <span class="skill-chip">PostgreSQL</span><span class="skill-chip">Supabase</span>
+                            <span class="skill-chip">Git</span><span class="skill-chip">GitHub</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i> IT Support</h3>
+                        <div class="skill-chips">
+                            <span class="skill-chip">Windows Installation</span>
+                            <span class="skill-chip">Software Installation</span>
+                            <span class="skill-chip">Software Configuration</span>
+                            <span class="skill-chip">Driver Installation</span>
+                            <span class="skill-chip">Troubleshooting</span>
+                            <span class="skill-chip">System Maintenance</span>
+                            <span class="skill-chip">System Optimization</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-pencil-alt"></i> Design</h3>
+                        <div class="skill-chips">
+                            <span class="skill-chip">Canva</span><span class="skill-chip">Social Media Graphics</span>
+                            <span class="skill-chip">Flyers</span><span class="skill-chip">Posters</span>
+                            <span class="skill-chip">Business Graphics</span>
                         </div>
                     </div>
                 </div>
-
-                <!-- right: Education card (separate) -->
+                <!-- Education card (unchanged) -->
                 <div id="education">
                     <div class="education-card">
                         <h3><i class="fas fa-graduation-cap" style="color:var(--secondary); margin-right:10px;"></i>Education</h3>
@@ -765,17 +914,15 @@
                             <div class="institution">ISTAMA / INUBIL</div>
                         </div>
                         <hr class="edu-divider">
-                        <p style="color: var(--gray); font-size:0.9rem; margin-top:8px;"><i class="fas fa-info-circle"></i> More details on my resume</p>
-                        <a href="KEMGANG%20WILFRIED.pdf" download class="btn-primary" style="display:inline-block; margin-top:16px; padding:10px 28px; font-size:0.9rem;">
-                            <i class="fas fa-download"></i> Download Resume
-                        </a>
+                        <p style="color:var(--gray); font-size:0.9rem; margin-top:8px;"><i class="fas fa-info-circle"></i> More details on my resume</p>
+                        <a href="KEMGANG%20WILFRIED.pdf" download class="btn-primary" style="display:inline-block; margin-top:16px; padding:10px 28px; font-size:0.9rem;"><i class="fas fa-download"></i> Download Resume</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ABOUT (with contact) -->
+    <!-- ABOUT (updated to reflect both dev & IT) -->
     <section class="about-section" id="about">
         <div class="container">
             <div class="section-header">
@@ -783,14 +930,13 @@
             </div>
             <div class="about-grid">
                 <div class="about-card">
-                    <h3>Summary</h3>
-                    <p>Full-stack developer specializing in web and mobile applications, passionate about creating innovative, scalable solutions.</p>
-                    <p>I hold a Bachelors in Software Engineering and focus on building clean, modern applications that solve real problems.</p>
-                    <p>My approach blends technical depth with a user-centered mindset.</p>
+                    <h3>Who I Am</h3>
+                    <p>I'm Kemgang Wilfried, a Software Developer and IT Specialist. I build custom websites, mobile apps, and desktop software, while also offering IT support, software installation, troubleshooting, and graphic design.</p>
+                    <p>Whether you need a business website, a mobile application, or help with computer issues — I provide practical, reliable solutions.</p>
                 </div>
-                <div class="about-card">
-                    <h3>Contact</h3>
-                    <p>Reach out through any channel below — I’d love to connect.</p>
+                <div class="about-card" id="contact">
+                    <h3>Let's Work Together</h3>
+                    <p>Need a website, application, design, or technical assistance? Reach out through any channel below.</p>
                     <div class="social-links">
                         <a href="https://github.com/Kemzy237" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         <a href="https://wa.me/237653426838" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -799,7 +945,9 @@
                         <a href="tel:+237653426838" class="social-link" aria-label="Phone"><i class="fas fa-phone"></i></a>
                         <a href="https://ig.me/m/kemzywil" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         <a href="https://t.me/Kemzywil06" class="social-link" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.linkedin.com/in/Kemzy-wil-9b5b05428" class="social-link" aria-label="Linkedin"><i class="fab fa-linkedin"></i></a>
                     </div>
+                    <p style="margin-top:20px; font-weight:500;"><i class="fas fa-comment"></i> WhatsApp: +237 653 426 838</p>
                 </div>
             </div>
         </div>
@@ -807,34 +955,25 @@
 
     <!-- FOOTER -->
     <footer>
-        <div class="container">
-            <span>© 2026 Kemgang Wilfried</span> · Software Developer
-        </div>
+        <div class="container"><span>© 2026 Kemgang Wilfried</span> · Software Developer &amp; IT Specialist</div>
     </footer>
 
-    <!-- JS -->
+    <!-- JS (preserve all functionality) -->
     <script>
         (function() {
-            // Hamburger
             const hamburger = document.getElementById('hamburger');
             const navLinks = document.getElementById('navLinks');
             hamburger.addEventListener('click', () => {
                 navLinks.classList.toggle('open');
             });
-
-            // Close on link click (mobile)
             document.querySelectorAll('.nav-links a').forEach(link => {
                 link.addEventListener('click', () => navLinks.classList.remove('open'));
             });
-
-            // Navbar shadow on scroll
             const navbar = document.getElementById('navbar');
             window.addEventListener('scroll', () => {
                 if (window.scrollY > 30) navbar.classList.add('scrolled');
                 else navbar.classList.remove('scrolled');
             });
-
-            // Smooth anchor scroll
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     const target = document.querySelector(this.getAttribute('href'));
@@ -847,8 +986,6 @@
                     }
                 });
             });
-
-            // fade-in on scroll (simple)
             const fadeEls = document.querySelectorAll('.fade-in');
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
