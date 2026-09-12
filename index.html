@@ -4,12 +4,42 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kemgang Wilfried · Software Developer & IT Specialist</title>
-    <meta name="description" content="Software development, IT support, and graphic design. Websites, mobile apps, desktop software, installations, troubleshooting & more." />
+
+    <!-- Primary SEO -->
+    <title>Kemgang Wilfried · Software Developer & IT Specialist | Websites, Apps & IT Support</title>
+    <meta name="description" content="Kemgang Wilfried is a software developer and IT specialist building websites, mobile apps, and desktop software. Offering IT support, software installation, troubleshooting, and graphic design." />
+    <meta name="keywords" content="Kemgang Wilfried, software developer, IT specialist, web developer, mobile app developer, Flutter developer, IT support, graphic design, Cameroon developer" />
+    <meta name="author" content="Kemgang Wilfried" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://kemzy.neocities.org/" />
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp previews) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kemgang Wilfried · Software Developer & IT Specialist" />
+    <meta property="og:description" content="Websites, mobile apps, desktop software, IT support, and graphic design. Let's turn your ideas into digital reality." />
+    <meta property="og:url" content="https://kemzy.neocities.org/" />
+    <meta property="og:image" content="https://kemzy.neocities.org/images/preview.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Kemgang Wilfried - Software Developer & IT Specialist" />
+    <meta property="og:site_name" content="Kemgang Wilfried Portfolio" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kemgang Wilfried · Software Developer & IT Specialist" />
+    <meta name="twitter:description" content="Websites, mobile apps, desktop software, IT support, and graphic design." />
+    <meta name="twitter:image" content="https://kemzy.neocities.org/images/preview.jpg" />
+
+    <!-- Theme color -->
+    <meta name="theme-color" content="#2c3e50" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="author" href="humans.txt" />
     <style>
         /* ----- global reset & variables (keep existing) ----- */
         
@@ -668,7 +698,20 @@
                 display: flex;
             }
             .hamburger {
-                display: flex;
+                display: flex !important;
+                flex-direction: column;
+                gap: 5px;
+                background: none;
+                border: none;
+                cursor: pointer;
+                z-index: 1000;
+            }
+            .hamburger span {
+                width: 26px;
+                height: 3px;
+                background: var(--primary);
+                border-radius: 6px;
+                transition: var(--transition);
             }
             .hero h1 {
                 font-size: 2.6rem;
@@ -699,6 +742,22 @@
             animation-delay: 0.4s;
         }
     </style>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Kemgang Wilfried",
+            "url": "https://kemzy.neocities.org/",
+            "jobTitle": "Software Developer & IT Specialist",
+            "email": "mailto:kemzywil@gmail.com",
+            "telephone": "+237653426838",
+            "sameAs": [
+                "https://github.com/Kemzy237",
+                "https://www.linkedin.com/in/Kemzy-wil-9b5b05428"
+            ],
+            "knowsAbout": ["Web Development", "Mobile App Development", "Flutter", "PHP", "JavaScript", "IT Support", "Graphic Design"]
+        }
+    </script>
 </head>
 
 <body>
@@ -941,7 +1000,7 @@
                         <a href="https://github.com/Kemzy237" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         <a href="https://wa.me/237653426838" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                         <a href="mailto:kemzywil@gmail.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                        <a href="https://m.me/Kemzy-wil" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://m.me/kemgang.wilfried" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="tel:+237653426838" class="social-link" aria-label="Phone"><i class="fas fa-phone"></i></a>
                         <a href="https://ig.me/m/kemzywil" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         <a href="https://t.me/Kemzywil06" class="social-link" aria-label="Telegram"><i class="fab fa-telegram"></i></a>

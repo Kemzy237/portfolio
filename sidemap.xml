@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+        http://www.google.com/schemas/sitemap-image/1.1
+        http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
+
+    <!-- Homepage / Main Portfolio Page -->
+    <url>
+        <loc>https://kemzy.neocities.org/</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+
+        <!-- Image entries help Google index your project thumbnails -->
+        <image:image>
+            <image:loc>https://kemzy.neocities.org/images/preview.jpg</image:loc>
+            <image:title>Kemgang Wilfried - Software Developer &amp; IT Specialist</image:title>
+            <image:caption>Portfolio preview of Kemgang Wilfried, software developer and IT specialist</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://kemzy.neocities.org/images/task_management.jpg</image:loc>
+            <image:title>Task Management System</image:title>
+            <image:caption>Web-based task management system built with HTML, CSS, JavaScript, PHP and MySQL</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://kemzy.neocities.org/images/votesecure.jpg</image:loc>
+            <image:title>Online Voting System</image:title>
+            <image:caption>Secure online voting system for elections, contests and corporate polls</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://kemzy.neocities.org/images/whistleguard.jpg</image:loc>
+            <image:title>Anonymous Whistleblowing Portal</image:title>
+            <image:caption>Encrypted anonymous whistleblowing portal for secure disclosures</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://kemzy.neocities.org/images/bus_tickets.jpg</image:loc>
+            <image:title>Bus Ticket Booking App</image:title>
+            <image:caption>Flutter-based mobile app for bus ticket booking and seat selection</image:caption>
+        </image:image>
+    </url>
+
+</urlset>

@@ -1,0 +1,40 @@
+/* TEAM */
+
+    Developer: Kemgang Wilfried
+    Role: Software Developer & IT Specialist
+    Contact: kemzywil [at] gmail [dot] com
+    Phone / WhatsApp: +237 653 426 838
+    Location: Cameroon
+    GitHub: https://github.com/Kemzy237
+
+/* SITE */
+
+    Standards: HTML5, CSS3, JavaScript
+    Components: Font Awesome, Google Fonts (Inter)
+    Software: VS Code, Git, GitHub
+    Language: English
+    Doctype: HTML5
+    IDE: Visual Studio Code
+
+/* THANKS */
+
+    Font Awesome — https://fontawesome.com
+    Google Fonts — https://fonts.google.com
+    Neocities — https://neocities.org
+    The open-source community
+
+/* SERVICES */
+
+    Website Development
+    Mobile App Development (Flutter)
+    Desktop Applications
+    Graphic Design
+    Software Installation & Configuration
+    Computer Maintenance & Troubleshooting
+
+/* CONTACT */
+
+    Website: https://kemzy.neocities.org/
+    Email: kemzywil [at] gmail [dot] com
+    WhatsApp: +237 653 426 838
+    LinkedIn: https://www.linkedin.com/in/Kemzy-wil-9b5b05428
